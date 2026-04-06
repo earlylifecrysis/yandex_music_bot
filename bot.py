@@ -120,9 +120,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         response = (
             f"<b>Информация о треке</b> 🎉\n\n"
             f"<b>Название:</b> {title}\n"
-            f"<b>Исполнитель:</b> {artists}\n"
+            f"<b>Артист:</b> {artists}\n"
             f"<b>Длительность:</b> {minutes}:{seconds:02d}\n\n"
-            f"<i>Есть предложения по улучшению бота? Напиши /help</i>"
         )
 
         await update.message.reply_text(response, parse_mode="HTML")
@@ -135,7 +134,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "Возможные причины:\n"
             "• Ссылка ведёт на альбом или плейлист (нужен конкретный трек)\n"
             "• Трек недоступен в вашем регионе\n"
-            "• Проблемы с API Яндекс.Музыки\n\n"
+            "• Проблемы с API Яндекс Музыки\n\n"
             "Отправьте /help для получения справки."
         )
 
