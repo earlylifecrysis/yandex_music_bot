@@ -118,7 +118,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         # Формируем ответ
         response = (
-            f"<b>Информация о треке</b> 🎉\n\n"
+            f"<b>Информация о треке</b>\n\n"
             f"<b>Название:</b> {title}\n"
             f"<b>Артист:</b> {artists}\n"
             f"<b>Длительность:</b> {minutes}:{seconds:02d}\n\n"
